@@ -1,0 +1,121 @@
+.registration-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@media screen and (max-width: 767px) {
+  .registration-form-container {
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 50px;
+  }
+}
+
+.head {
+  color: #ea580c;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+@media screen and (max-width: 767px) {
+  .head {
+    font-size: 36px;
+  }
+}
+
+.view-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
+  min-height: 310px;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .view-container {
+    max-width: 450px;
+    flex-shrink: 0;
+    box-shadow: 0px 4px 16px 0px #bfbfbf;
+    padding: 48px 64px 48px 64px;
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.input-label {
+  color: #475569;
+  margin-bottom: 0px;
+  font-family: 'Roboto';
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.name-input-field {
+  color: #9aa5b1;
+  font-size: 16px;
+  line-height: 16px;
+  border: 1px solid #cbd2d9;
+  border-radius: 8px;
+  margin-top: 5px;
+  padding: 8px 16px 8px 16px;
+  outline: none;
+}
+
+.success-img {
+  width: 72px;
+}
+
+.submit-btn {
+  font-family: 'Roboto';
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #ea580c;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  padding: 8px 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .submit-btn {
+    width: 100%;
+  }
+}
+
+.error-field {
+  border: 1px solid #ff0b37;
+  background-color: #fef2f4;
+}
+
+.error-msg {
+  align-self: flex-start;
+  font-size: 12px;
+  color: #ff0b37;
+  font-family: 'Roboto';
+  margin-top: 3px;
+  margin-bottom: 0px;
+  line-height: 16px;
+}
